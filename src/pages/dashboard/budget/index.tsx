@@ -55,7 +55,7 @@ const BudgetRoom = () => {
             <BudgetTabs currentTab={currentTab} setCurrentTab={setCurrentTab} />
           </div>
 
-          <div className="mr-6 lg:mr-0 border-b border-[#C0C9C0] px-5 py-4">
+          <div className="mr-6 border-b border-[#C0C9C0] px-5 py-4 lg:mr-0">
             <div className="flex items-center space-x-8 overflow-x-auto whitespace-nowrap text-sm font-medium md:overflow-visible">
               <span>Finanical Year</span>
               <div className="flex items-center space-x-4">
@@ -65,7 +65,7 @@ const BudgetRoom = () => {
                     <button
                       className={cn(
                         "flex items-center justify-start rounded-xl bg-[#EDEEEA] px-4 py-3 text-left font-normal",
-                        !date && "text-muted-foreground"
+                        !date && "text-muted-foreground",
                       )}
                     >
                       <CalendarDaysIcon className="mr-2 h-4 w-4" />
@@ -94,7 +94,7 @@ const BudgetRoom = () => {
                     <button
                       className={cn(
                         "flex items-center justify-start rounded-xl bg-[#EDEEEA] px-4 py-3 text-left font-normal",
-                        !date && "text-muted-foreground"
+                        !date && "text-muted-foreground",
                       )}
                     >
                       <CalendarDaysIcon className="mr-2 h-4 w-4" />
@@ -187,7 +187,7 @@ const BudgetRoom = () => {
 
                   <div className="border-t border-[#C0C9C0] px-4 py-5">
                     <CustomButton
-                      className="bg-vendpalGreen flex w-full items-center justify-center space-x-2 rounded-xl py-4 text-[#C5FCD6]"
+                      className="flex w-full items-center justify-center space-x-2 rounded-xl bg-vendpalGreen py-4 text-[#C5FCD6]"
                       icon={
                         <img
                           src="/images/dashboard/overview/contract_edit-green.svg"
